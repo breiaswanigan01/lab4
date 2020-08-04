@@ -65,7 +65,9 @@ toggleButton.addEventListener("click", () => {
 });
 endButton.addEventListener("click", () => {
   bulb.remove("light");
+  // select all bulbs from HTML
   let buttons = document.querySelectorAll(".switch");
+  //disable the buttons
   buttons.forEach((button) => {
     button.disabled = true;
   });
